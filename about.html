@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="theme.css">
+        <title>dawn &bullet; about</title>
+
+        <style>
+            body {
+                background-image: url(backgrounds/bridge_over_a_pond_of_water_lilies.jpg);
+                background-size: cover;
+            }
+            .box {
+                background-color: #FFF5;
+                backdrop-filter: blur(5px);
+            }
+
+            .dialoguebox {
+                width: fit-content;
+                margin: 1em auto;
+                text-align: center;
+            }
+            .dialoguebox[open] {
+                color: orange;
+                border: 5px inset skyblue;
+
+                padding: 1em;
+                
+                background-image: url(about_transmission.gif);
+                background-repeat: repeat;
+                background-attachment: fixed;
+            }
+            .center {
+                text-align: center;
+                font-family: monospace;
+            }
+            .left {
+                font-style: italic;
+                text-align: center;
+                font-family: monospace;
+            }
+            .right {
+                font-weight: bold;
+                text-align: center;
+                font-family: monospace;
+            }
+
+            td img {
+                display: block;
+                margin: 0 auto;
+            }
+
+            #statuscafe {
+                padding: .5em;
+                background-color: azure;
+                border: 1px solid midnightblue;
+                width: fit-content;
+                margin: 1em auto;
+            }
+            #statuscafe-username {
+                margin-bottom: .5em;
+            }
+            #statuscafe-username a {
+                font-weight: bold;
+                color: midnightblue;
+                text-decoration-color: initial;
+            }
+            #statuscafe-content {
+                margin: 0 1em 0.5em 1em;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header class="box">
+            <nav>
+                <a href="index.html">home</a>
+            </nav>
+        </header>
+
+        <main class="box">
+            <h1>about</h1>
+            <p class="tagline">i hate writing about myself</p>
+            
+            <img src="about_pfp.jpg" style="border-radius: 50%; width: 256px; margin: 0 auto;">
+
+            <table>
+                <tr>
+                    <td>name</td>
+                    <td>dawn</td>
+                </tr>
+                <tr>
+                    <td>age</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>occupation</td>
+                    <td>third year cs student</td>
+                </tr>
+                <tr>
+                    <td>status</td>
+                    <td>cryptid / linux mint user</td>
+                </tr>
+                <tr>
+                    <td>discord</td>
+                    <td>dawnvoid</td>
+                </tr>
+                <tr>
+                    <td>email</td>
+                    <td>voiding.voided@gmail.com</td>
+                </tr>
+            </table>
+
+            <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=dawnvoid" defer></script>
+
+            <div style="display: flex; flex-flow: row wrap; gap: 1em; justify-content: space-evenly;">
+                <section>
+                    <h2>likes</h2>
+                    <ul style="list-style-type: none;">
+                        <li>rain</li>
+                        <li>tea</li>
+                        <li>kitty cats</li>
+                        <li>hiking</li>
+                        <li title="funny circle go whee">disc golf</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>dislikes</h2>
+                    <ul style="list-style-type: none;">
+                        <li>waking up</li>
+                        <li>coffee</li>
+                        <li>people</li>
+                        <li>preppers</li>
+                        <li>real golf</li>
+                    </ul>
+                </section>
+            </div>
+
+            <details class="dialoguebox">
+                <summary>log</summary>
+                <p class="center">[transmission begin]</p>
+                <p class="left">Hey. Um. Who is this?</p>
+                <p class="right">I need to stop being lazy. I need to do things.</p>
+                <p class="left">I beg your pardon?</p>
+                <p class="right">The neuroticism is strong but i am stronger.</p>
+                <p class="left">Sorry? What?</p>
+                <p class="right">I can't let my momentum go to waste. I must climb the wall of the pit.</p>
+                <p class="left">Who is this??</p>
+                <p class="right">All the judgement i feel is just my mind playing tricks. Paranoia.</p>
+                <p class="left">Who are you? How did you get this number? Wh&mdash;</p>
+                <p class="right">My inner voice is cruel, but i don't have to be.</p>
+                <p class="left">Ok look. I don't know who you are. Goodbye.</p>
+                <p class="right">It's all gonna be o&mdash;</p>
+                <p class="center">[transmission over]</p>
+            </details>
+
+            <div class="buttons">
+                <img class="button" src="buttons/dawnvoid_original.png" title="the first button i ever made">
+                <img class="button" src="buttons/dawnvoid.gif" title="button from site version.. 2?">
+                <img class="button" src="buttons/dawnvoid.png" title="i don't even know tbh">
+                <img class="button" src="buttons/dawnvoid_glass.png" title="my attempt at frutiger aero lol">
+            </div>
+        </main>
+        
+        <!-- TODO: (optional) randomize order via javascript -->
+        <section class="box">
+            <div class="buttons">
+                <a href="https://bodhisattva.land/"><img class="button" src="buttons/bodhisattva.png"></a>
+                <a href="https://bytemoth.neocities.org/"><img class="button" src="buttons/bytemoth.png" title="the lurker who knows all"></a>
+                <a href="https://errormine.net/"><img class="button" src="buttons/errormine.gif" title=":D"></a>
+                <a href="https://freckleskies.neocities.org/"><img class="button" src="buttons/freckleskies.gif"></a>
+                <a href="https://fretnoize.neocities.org/"><img class="button" src="buttons/fretnoize.png"></a>
+                <a href="https://hosma.neocities.org/"><img class="button" src="buttons/hosma.png" title="fumo buyer"></a>
+                <a href="https://jackomix.neocities.org/"><img class="button" src="buttons/jackomix.gif" title=":flushed:"></a>
+                <a href="https://koyo.neocities.org/"><img class="button" src="buttons/koyo_pink.png" title=":3"></a>
+                <a href="https://kryptonaut.neocities.org/"><img class="button" src="buttons/kryptonaut.gif" title="ginger cryptid"></a>
+                <a href="https://omnipresence.neocities.org/"><img class="button" src="buttons/omni.gif" title="hexagon fucker"></a>
+                <a href="https://personally-comfy.net/"><img class="button" src="buttons/personally-comfy.png" title="not terminally online"></a>
+                <a href="https://psychicnewborn.neocities.org/"><img class="button" src="buttons/psychicnewborn.png" title="moribund"></a>
+                <a href="https://scarbyte.com/"><img class="button" src="buttons/scarbyte.png" title="rat eater"></a>
+                <a href="https://solinus.neocities.org/"><img class="button" src="buttons/solinus.png" title="the frutiger aero guy"></a>
+                <a href="https://techramancer.com/"><img class="button" src="buttons/techramancers_study.gif"></a>
+                <a href="https://twelvemen.neocities.org/"><img class="button" src="buttons/twelvemen.gif" title="how are you this cool"></a>
+                <a href="https://undoified.neocities.org/"><img class="button" src="buttons/undoified.png" title=":)"></a>
+                <a href="https://vegacollective.com/"><img class="button" src="buttons/vegacollective.gif" title="UBWU"></a>
+            </div>
+            <p class="note">(if you want your button here, let me know)</p>
+        </section>
+
+        <footer class="box">
+            (c) nobody
+        </footer>
+    </body>
+</html>

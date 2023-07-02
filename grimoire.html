@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="theme.css">
+        <title>dawn &bullet; grimoire</title>
+
+        <style>
+            body {
+                font-family: cursive;
+            }
+
+            p {
+                text-align: center;
+            }
+            .runes {
+                text-align: center;
+                font-family: unset;
+                font-size: 1rem;
+                margin: 1em auto;
+            }
+
+            code {
+                color: maroon;
+            }
+
+            pre {
+                border: 3px double maroon;
+                padding: 1ch;
+            }
+
+            .page {
+                border-image: url(grimoire_border.png) 13 / 13px repeat;
+
+                background-image: url(backgrounds/paper.jpeg);
+                background-repeat: repeat;
+                background-size: contain;
+
+                margin: 1em auto;
+                padding: 1em;
+
+                /* set aspect ratio, but grow height if content is too big */
+                aspect-ratio: 1 / 1.618;
+                height: fit-content;
+            }
+            .skinny {
+                max-width: 64ch;
+                margin: 0 auto;
+            }
+
+            img {
+                height: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header class="skinny" style="margin: 1em auto; padding: 1em;">
+            <nav>
+                <a href="index.html">home</a>
+            </nav>
+        </header>
+
+        <main class="skinny">
+            <section class="page">
+                <h1>Electric Grimoire</h1>
+                <div class="runes">ᚺᛖᛚᛚᛟ ᚹᛟᚱᛚᛞ</div>
+            </section>
+
+            <section class="page">
+                <h2>Disk</h2>
+                <div class="runes">ᚷᚱᚨᚾᛞ ᛚᛁᛒᚱᚨᚱᛁ</div>
+                <img src="grimoire_disk.png">
+                <p>Show disk usage: <code>df -h</code></p>
+                <p>List filesizes: <code>du -sh * | sort -h</code></p>
+                <p>Show disks and mountpoints: <code>lsblk</code></p>
+                <p>Mount ntfs partition in read/write mode: <code>sudo mount -t ntfs -o rw,remount &lt;device&gt; &lt;directory&gt;</code>. Must unmount first if already mounted.</p>
+            </section>
+
+            <section class="page">
+                <h2>Ssh</h2>
+                <div class="runes">ᚨᛊᛏᚱᚨᛚ ᛈᚱᛟᛃᛖᚲᛏᛟᚾ</div>
+                <p>Connect: <code>ssh [-p &lt;port&gt;] [username@]&lt;ip&gt;</code></p>
+                <p>Copy files to: <code>scp [-P &lt;port&gt;] &lt;filepath&gt; [username@]&lt;ip&gt;:&lt;filepath&gt;</code></p>
+                <p>Copy files from: <code>scp [-P &lt;port&gt;] [username@]&lt;ip&gt;:&lt;filepath&gt; &lt;filepath&gt;</code></p>
+                <p>Run command: <code>ssh [-p &lt;port&gt;] [username@]&lt;ip&gt; &lt;command&gt;</code></p>
+
+                <p>Specify hostnames in <code>/etc/ssh/ssh_config</code>. They can be used in place of ip addresses.</p>
+<pre><code>Host &lt;name&gt;
+    HostName &lt;ip&gt;
+    Port &lt;port&gt;
+</code></pre>
+            </section>
+
+            <section class="page">
+                <h2>Git</h2>
+                <div class="runes">ᛏᛁᛗᛖ ᛏᚱᚨᚢᛖᛚ</div>
+                <p>Clone: <code>git clone &lt;url&gt;</code></p>
+                <p>Pull: <code>git pull</code></p>
+                <p>Add: <code>git add &lt;path&gt;</code></p>
+                <p>Commit: <code>git commit</code></p>
+                <p>Push: <code>git push</code></p>
+                <p>List branches, local and remote: <code>git branch -a</code></p>
+                <p>Switch branches: <code>git checkout &lt;branch&gt;</code></p>
+                <p>Create a branch: <code>git branch &lt;name&gt;</code>. You'll still need to switch to it afterwards.</p>
+                <p>List previous commits: <code>git log --oneline</code></p>
+                <p>Revert to previous commit: <code>git checkout &lt;hash&gt; .</code></p>
+
+                <p>Clone with submodules: <code>git clone --recurse-submodules &lt;url&gt;</code></p>
+                <p>Clone submodules later: <code>git submodule update --init --recursive</code></p>
+                <p>Submodules are like their own repos. You can <code>cd</code> inside and switch branches, push/pull, etc.</p>
+            </section>
+
+            <section class="page">
+                <p>The remaining pages have yet to be deciphered. Please come back another time.</p>
+            </section>
+        </main>
+
+        <footer class="skinny" style="margin: 1em auto; padding: 1em;">
+            (c) nobody
+        </footer>
+    </body>
+</html>

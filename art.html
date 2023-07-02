@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="theme.css">
+        <title>dawn &bullet; art</title>
+
+        <style>
+            body {
+                background: linear-gradient(.1turn, red, blue)
+            }
+            .box {
+                background-color: #FFF;
+            }
+
+            img {
+                background-color: var(--bg);
+                border: 1px solid;
+                box-shadow: -.25em .25em 0 black;
+            }
+
+            .group {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                gap: 1em;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header class="box">
+            <nav>
+                <a href="index.html">home</a>
+            </nav>
+        </header>
+
+        <main class="box">
+            <h1>art</h1>
+            <p class="tagline">ah yes, "art"</p>
+
+            <section class="group">
+                <img loading="lazy" src="art/albete.png">
+                <img loading="lazy" src="art/auga.png">
+                <img loading="lazy" src="art/flower_prince.png">
+                <img loading="lazy" src="art/ijago.png">
+                <img loading="lazy" src="art/illix.png">
+                <img loading="lazy" src="art/killo.png">
+                <img loading="lazy"src="art/kugo.png">
+                <img loading="lazy" src="art/misi.png">
+                <img loading="lazy" src="art/ooo.png">
+            </section>
+            <section class="group">
+                <img loading="lazy" src="art/outerworld_bulb_urchin.png">
+                <img loading="lazy" src="art/outerworld_mantis.png">
+                <img loading="lazy" src="art/outerworld_screamer.png">
+            </section>
+        </main>
+
+        <footer class="box">
+            (c) nobody
+        </footer>
+    </body>
+</html>
