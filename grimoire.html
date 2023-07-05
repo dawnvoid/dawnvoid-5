@@ -8,8 +8,23 @@
         <title>dawn &bullet; grimoire</title>
 
         <style>
+            @font-face {
+                font-family: 'Fondamento';
+                src: url('fonts/fondamento/fondamento-regular-webfont.woff2') format('woff2'),
+                     url('fonts/fondamento/fondamento-regular-webfont.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: 'Fondamento';
+                src: url('fonts/fondamento/fondamento-italic-webfont.woff2') format('woff2'),
+                     url('fonts/fondamento/fondamento-italic-webfont.woff') format('woff');
+                font-weight: normal;
+                font-style: italic;
+            }
+
             body {
-                font-family: cursive;
+                font-family: 'Fondamento', cursive;
             }
 
             p {
@@ -29,6 +44,8 @@
             pre {
                 border: 3px double maroon;
                 padding: 1ch;
+                width: fit-content;
+                margin: 1em auto;
             }
 
             .page {
@@ -46,12 +63,13 @@
                 height: fit-content;
             }
             .skinny {
-                max-width: 64ch;
+                max-width: 42ch;
                 margin: 0 auto;
             }
 
             img {
                 height: auto;
+                margin: 0 auto;
             }
         </style>
     </head>

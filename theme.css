@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('fonts/eb_garamond/ebgaramond-variablefont_wght.woff2') format('woff2'),
+         url('fonts/eb_garamond/ebgaramond-variablefont_wght.woff') format('woff');
+    font-weight: 400 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('fonts/eb_garamond/ebgaramond-italic-variablefont_wght.woff2') format('woff2'),
+         url('fonts/eb_garamond/ebgaramond-italic-variablefont_wght.woff format') format('woff');
+    font-weight: 400 800;
+    font-style: italic;
+}
+
 :root {
     --fg: black;
     --bg: #F4EFEC;
@@ -8,6 +23,8 @@ body {
     background-color: var(--bg);
     color: var(--fg);
     padding: 0 1em;
+
+    font-family: 'EB Garamond', serif;
 
     /* background-size: cover; */
     background-attachment: fixed;
