@@ -132,8 +132,26 @@
             </section>
 
             <section class="page">
-                <h2>C Tricks</h2>
+                <h2>Apt</h2>
+                <div class="runes">ᛏᛖᛚᛖᚲᛁᚾᛖᛊᛁᛊ</div>
+                <p>Fix interrupted upgrades: <code>sudo dpkg --configure -a</code></p>
+            </section>
 
+            <section class="page">
+                <h2>Make & CMake</h2>
+                <div class="runes">ᚲᛟᚾᛊᛏᚱᚢᚲᛏᛟᚾ ᚨᚢᛏᛟᛗᚨᛏᚨ</div>
+                <p>Makefile macro expanding to rule's target: <code>$@</code></p>
+                <p>Makefile macro expanding to rule's prerequisites: <code>$^</code></p>
+                <p>For CMake, make sure you're inside the <code>./build/</code> directory.</p>
+                <p>Configure: <code>cmake ..</code></p>
+                <p>Build: <code>cmake --build .</code></p>
+                <p>Graphical mode: <code>cmake-gui</code></p>
+                <p>Curses mode: <code>ccmake</code></p>
+            </section>
+
+            <section class="page">
+                <h2>C Tricks</h2>
+                <div class="runes">ᛗᛟᚦᛖᚱ ᛏᛟᛜᚢᛖ</div>
 <pre><code>if (*c &gt;= '0' && *c &lt;= '9') {
     return *c - '0';
 }
