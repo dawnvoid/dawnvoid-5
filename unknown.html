@@ -3,17 +3,31 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/reset.css">
         <title>D̸̨̛̻̩̂̿̎̊̎͐̃͑͌̀͠͠͝o̵͈̣̹͉͙͂̀̈́͊͂͌͋̔͊̓ç̴̡̡̖̦͎͕̫̞̦̞̬͍̍̿͌̀ͅų̸̧̥̤͚̮͖̱̞̝̖̩̹̺̺̊́̓͌͂̃ͅḿ̸̢̢̡͇̯͍̬͈͉̘͔͙̞͈̰̰̐͠è̶̘̞͎̖̒̒̒̊͘͝͠n̶͕̯̭̜̥̙͎̥͇̰͔̰̗͑̋̍̇͂̾̄̑͐͒̀͐̌͂͐͊̚ͅţ̷̢̫͉̼̞̹̩̬͓̖̒̀͐̅̕͝</title>
 
         <style>
-            img:hover {
-                background-color: black;
+            @keyframes glitch {
+                0% {
+                    background-color: white;
+                }
+                90% {
+                    background-color: #DDF;
+                }
+            }
+
+            body {
+                background-image: url(/0/hello.png);
+                background-color: white;
+
+                animation: glitch 1s linear infinite;
             }
         </style>
     </head>
 
     <body style="display: flex; flex-flow: column nowrap; justify-content: center; align-items: center; min-height: 100vh;">
-        <p style="width: fit-content; transform: rotate(.02turn) scaleX(1.5)">You shouldn't be here.</p>
-        <img src="0/hello.png" style="transform: rotate(-.01turn) scaleY(2)">
+        <main>
+            <p style="transform: skewX(.01turn) scaleX(2.0);">You shouldn't be here.</p>
+        </main>
     </body>
 </html>

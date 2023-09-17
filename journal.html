@@ -68,6 +68,10 @@
 
             <h2>Index</h2>
             <ol reversed id="toc">
+                <li><a href="#28">Free Obsidian mobile sync with Git</a></li>
+                <li><a href="#27">2023-09-03</a></li>
+                <li><a href="#26">2023-08-24</a></li>
+                <li><a href="#25">Hi Again (2)</a></li>
                 <li><a href="#24">Hi Again</a></li>
                 <li><a href="#23">Two Birds Playing</a></li>
                 <li><a href="#22">Doing Nothing</a></li>
@@ -93,6 +97,115 @@
                 <li><a href="#2">Terminal</a></li>
                 <li><a href="#1">Black Planet</a></li>
             </ol>
+
+            <article id="28">
+                <h2>Free Obsidian mobile sync with Git</h2>
+                <time datetime="2023-09-08">2023-09-08</time>
+                <p>
+                    Doesn't have to be Obsidian, that's just what I use.
+                </p>
+                <ol>
+                    <li>install FDroid (download apk online)</li>
+                    <li>install Termux from FDroid (the version in google play store is outdated)</li>
+                    <li>start Termux</li>
+                    <li>update everything: <code>pkg upgrade</code></li>
+                    <li>install stuff: <code>pkg install git openssh</code></li>
+                    <li>let Termux access your phone's files: <code>termux-setup-storage</code> (this will create <code>~/storage/</code>)</li>
+                    <li>generate ssh key: <code>ssh-keygen -t rsa -C 'put a comment here'</code> (this will create <code>~/.ssh/id_rsa</code> and <code>~/.ssh/id_rsa.pub</code>, or something similar)</li>
+                    <li>show public ssh key: <code>cat ~/.ssh/id_rsa.pub</code> (make sure it's the one that ends in <code>.pub</code>!)</li>
+                    <li>copy the result to your clipboard</li>
+                    <li>go to GitHub and add a new ssh key (settings -> ssh and gpg keys -> new ssh key). paste in your public key.</li>
+                    <li>if everything worked, you should be able to run <code>ssh -T git@github.com</code> in Termux. it won't actually let you log in, but it shouldn't throw any errors.</li>
+                    <li>now remember: whenever you clone a repo, <b>use the ssh url, not the https one</b>!!! you can fix an existing repo with <code>git remote set-url origin git@github.com:&lt;username&gt;/&lt;project&gt;.git</code></li>
+                    <li>also: your Documents folder is probably at <code>~/storage/shared/Documents/</code></li>
+                </ol>
+            </article>
+
+            <article id="27">
+                <h2>2023-09-03</h2>
+                <time datetime="2023-09-03">2023-09-03</time>
+                <p>
+                    I stopped being creative years ago.
+                    If I was bored, and had a choice between drawing and videogames, I'd choose videogames.
+                    And if it wasn't videogames, it was YouTube, or memes on Instagram.
+                    I did nothing but consume.
+                    I turned my brain to mush.
+                    Got to the point where, If I got up and walked to the livingroom, I wouldn't be able to find anything to do.
+                    How fucked up is that?
+                    As a kid I'd play outside.
+                    I could create fun whenever I wanted.
+                    It's like I shut all that away and forgot about it.
+                </p>
+                <p>
+                    It takes a while to come back from that.
+                    Over the last year I've gradually eased back into better ways.
+                    I started drawing again!
+                    Apparently my love for cute little doodles hasn't died yet.
+                    I'm also getting into photography, guitar (possibly), and longboarding.
+                    There's a longboarding club at my uni and it's actually super fun.
+                </p>
+                <p>
+                    I even read some books! So far:
+                    The Cabinet, by Un-su Kim;
+                    Yokohama Station SF, by Yuba Isukari;
+                    The Tao of Pooh, by Benjamin Hoff;
+                    and currently The Te of Piglet, by Benjamin Hoff.
+                    I also have:
+                    Giving Up the Gun: Japan's Reversion to the Sword, 1543-1879, by Noel Perrin;
+                    Structure and Interpretation of Computer Programs, by Harold Abelson, Gerald Jay Sussman, Julie Sussman;
+                    and Black Art of 3D Game Programming, by André LaMothe.
+                </p>
+                <p>
+                    I even have ideas for this site! Crazy, right?
+                </p>
+                <p>
+                    I'm living off-campus this year, in an apartment.
+                    So I'm learning to cook and bake.
+                    I baked bread yesterday!
+                    It's too dense but still edible.
+                    Gotta start somewhere.
+                </p>
+                <figure>
+                    <img src="journal_blåhaj.jpg">
+                    <figcaption>:eye:</figcaption>
+                </figure>
+                <!-- <figure>
+                    <img src="journal_your_order_blåhaj.png">
+                    <figcaption>wait what? oh god og fujk</figcaption>
+                </figure> -->
+            </article>
+
+            <article id="26">
+                <h2>2023-08-24</h2>
+                <time datetime="2023-08-24">2023-08-24</time>
+                <p>
+                    I think I'm growing as a person again.
+                    For a long time I felt stuck, in life and in my head.
+                </p>
+            </article>
+
+            <article id="25">
+                <h2>Hi Again (2)</h2>
+                <time datetime="2023-08-01">2023-08-01</time>
+                <p>
+                    Wow. I'm bad at this.
+                </p>
+                <p>
+                    I forgot to post about: We launched a fucking rocket (it blew up).
+                </p>
+                <img src="/photos/bsli/bsli_2022_1.jpg">
+                <p>
+                    Along the way, I took a piss at this town with like, population 3.
+                    The town was so desolate.
+                    Some local guy basically broke into the laundromat so I could use the bathroom lmao.
+                </p>
+                <img src="/photos/bsli/bsli_2022_2.jpg">
+                <p>
+                    I want to do shorter format posts here.
+                    That means more spewing random crap.
+                    That's ok, it'll be fun.
+                </p>
+            </article>
 
             <article id="24">
                 <h2>Hi Again</h2>

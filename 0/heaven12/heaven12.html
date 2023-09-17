@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/reset.css">
+    <title>HEAVEN 12</title>
+
+    <style>
+        @font-face {
+            font-family: 'EB Garamond';
+            src: url('/fonts/eb_garamond/ebgaramond-variablefont_wght.woff2') format('woff2'),
+                url('/fonts/eb_garamond/ebgaramond-variablefont_wght.woff') format('woff');
+            font-weight: 400 800;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'EB Garamond';
+            src: url('/fonts/eb_garamond/ebgaramond-italic-variablefont_wght.woff2') format('woff2'),
+                url('/fonts/eb_garamond/ebgaramond-italic-variablefont_wght.woff format') format('woff');
+            font-weight: 400 800;
+            font-style: italic;
+        }
+
+        * {
+            /* outline: 1px solid; */
+        }
+
+        body {
+            font-family: 'EB Garamond';
+            text-align: center;
+
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+
+
+            /* background-image: url(/photos/alone/alone_2.jpg); */
+            /* background-size: cover; */
+        }
+
+        header,
+        main {
+            margin: 0 auto;
+        }
+
+        footer {
+            margin: 1em auto;
+        }
+
+        h1 {
+            font-size: 2em;
+            font-style: italic;
+            margin-top: .5em;
+            margin-bottom: .5em;
+        }
+
+        .note {
+            color: blue;
+            font-family: monospace;
+        }
+
+        img {
+            margin: 1em auto;
+            image-rendering: pixelated;
+        }
+
+        /* animation */
+        @keyframes glitch {
+            from {
+                transform: skewX(0turn);
+            }
+            to {
+                transform: skewX(0.001turn);
+            }
+        }
+        body {
+            animation: glitch 6s linear alternate infinite;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            font-style: italic;
+        }
+        a:hover::before {
+            content: "[";
+        }
+        a:hover::after {
+            content: "]";
+        }
+    </style>
+</head>
+
+<body>
+    <!-- this text is meaningless i made it up at 3am lol -->
+    <!-- also everything will be solvable without looking at the html/css/js -->
+    <!-- latest version of all pages is the canon version -->
+    <!-- these rules will be written down somewhere real eventually -->
+
+    <div style="background-color: #fff1; padding: 1em;">
+
+        <header>
+            <h1>HEAVEN 12</h1>
+        </header>
+
+        <main>
+            <div>68 queued, 440 completed</div>
+            <a href="#have-patience" class="note loading">A LOADING</a>
+            <a href="" class="note offline">B OFFLINE</a>
+            <a href="" class="note offline">C OFFLINE</a>
+            <a href="" class="note offline">D OFFLINE</a>
+            <a href="" class="note offline">E OFFLINE</a>
+            <a href="" class="note offline">F OFFLINE</a>
+            <a href="" class="note offline">G OFFLINE</a>
+            <div>link degradation 89%</div>
+            <div>time to catastrophe 2y 6m</div>
+        </main>
+
+        <footer>
+            <img src="heaven12.png">
+            <em>Donate your attention.</em>
+        </footer>
+    </div>
+</body>
+</html>
